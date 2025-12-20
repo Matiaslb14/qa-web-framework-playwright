@@ -31,7 +31,10 @@ qa-web-framework-playwright/
 ├── utils/
 │ └── config.py
 ├── reports/
-│ └── report.html
+│ ├── report.html
+│ ├── report.png
+│ └── screenshots/
+│   └── example_failure.png
 ├── conftest.py
 ├── pytest.ini
 ├── requirements.txt
@@ -78,7 +81,7 @@ $env:HEADLESS="false"; pytest
 - Las credenciales y URL base están centralizadas en un archivo de configuración
 - Se emplean fixtures para el manejo de browser y contextos de ejecución
 - Se generan reportes HTML automáticamente al finalizar la ejecución
-- Se capturan screenshots automáticos cuando un test falla
+- Se capturan screenshots automáticos como evidencia cuando un test falla
 
 ## 📸 Evidencia de ejecución
 
