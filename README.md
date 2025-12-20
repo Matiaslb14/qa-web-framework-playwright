@@ -43,7 +43,7 @@ qa-web-framework-playwright/
 - `pages/`: contiene los Page Objects siguiendo el patrón POM  
 - `tests/`: contiene los tests automatizados  
 - `utils/`: configuración centralizada del proyecto  
-- `reports/`: reporte HTML de ejecución y evidencia  
+- `reports/`: evidencia de ejecución (reporte visual y screenshots) 
 - `conftest.py`: fixtures y hooks globales de Pytest  
 - `pytest.ini`: configuración global de Pytest  
 
