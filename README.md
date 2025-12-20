@@ -31,7 +31,6 @@ qa-web-framework-playwright/
 ├── utils/
 │ └── config.py
 ├── reports/
-│ ├── report.html
 │ ├── report.png
 │ └── screenshots/
 │   └── example_failure.png
