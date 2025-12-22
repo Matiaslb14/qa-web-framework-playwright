@@ -1,8 +1,17 @@
 # QA Web Framework – Playwright + Pytest
 
 ## 📌 Descripción
-Proyecto de QA Automation enfocado en la automatización de pruebas web mediante la construcción de un mini framework utilizando Playwright y Pytest.  
-Se validan flujos críticos de una aplicación web aplicando buenas prácticas como Page Object Model (POM), fixtures, configuración centralizada y generación de reportes automáticos.
+Proyecto de **QA Automation enfocado en la automatización de pruebas web** mediante la construcción de un **mini framework** utilizando **Playwright** y **Pytest**.  
+Se validan flujos críticos de una aplicación web aplicando buenas prácticas como **Page Object Model (POM)**, **fixtures**, **configuración centralizada** y **generación de reportes automáticos**.
+
+## ⭐ Características / Features Clave
+- Framework de automatización web con Playwright + Pytest
+- Implementación de Page Object Model (POM)
+- Uso de fixtures para manejo de browser y contextos
+- Configuración centralizada
+- Ejecución en modo headless o visible
+- Generación automática de reportes HTML
+- Captura automática de screenshots en fallos
 
 ## 🧪 Qué se está probando
 - Flujo de login con credenciales válidas
@@ -75,14 +84,14 @@ $env:HEADLESS="false"; pytest
 - Validación de carga del dashboard
 - Logout correcto y retorno a la pantalla de login
 
-## 📝 Notas de QA
-- Se utiliza Page Object Model para mejorar mantenibilidad y escalabilidad
+## 🧠 Decisiones técnicas
+- Se utiliza **Page Object Model** para mejorar mantenibilidad y escalabilidad
 - Las credenciales y URL base están centralizadas en un archivo de configuración
-- Se emplean fixtures para el manejo de browser y contextos de ejecución
-- Se generan reportes HTML automáticamente al finalizar la ejecución
-- Se capturan screenshots automáticos como evidencia cuando un test falla
+- Se emplean **fixtures de Pytest** para el manejo del navegador y los contextos de ejecución.
+- Los tests se ejecutan en modo headless por defecto para facilitar su automatización.
+- Se generan reportes HTML y screenshots automáticos como evidencia ante fallos.
 
-## 📸 Evidencia de ejecución
+## 📊 Reportes / Evidencia (cuando aplique)
 
 ### Reporte HTML de ejecución
 ![Reporte de ejecución](reports/report.png)
