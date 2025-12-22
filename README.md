@@ -1,17 +1,17 @@
 # QA Web Framework – Playwright + Pytest
 
 ## 📌 Descripción
-Proyecto de **QA Automation enfocado en la automatización de pruebas web** mediante la construcción de un **mini framework** utilizando **Playwright** y **Pytest**.  
-Se validan flujos críticos de una aplicación web aplicando buenas prácticas como **Page Object Model (POM)**, **fixtures**, **configuración centralizada** y **generación de reportes automáticos**.
+Proyecto de **QA Automation** enfocado en la automatización de **pruebas web** mediante la construcción de un **mini framework** utilizando **Playwright** y **Pytest**.  
+Se validan flujos críticos de una aplicación web aplicando buenas prácticas como **Page Object Model (POM)**, uso de **fixtures**, **configuración centralizada** y **generación de reportes automáticos**.
 
 ## ⭐ Características / Features Clave
-- Framework de automatización web con Playwright + Pytest
-- Implementación de Page Object Model (POM)
-- Uso de fixtures para manejo de browser y contextos
-- Configuración centralizada
-- Ejecución en modo headless o visible
-- Generación automática de reportes HTML
-- Captura automática de screenshots en fallos
+- Framework de automatización web con **Playwright** y **Pytest**
+- Implementación de **Page Object Model (POM)**
+- Uso de **fixtures** para manejo de navegador y contextos
+- Configuración centralizada del proyecto
+- Ejecución en modo **headless** o visible
+- Generación automática de reportes **HTML**
+- Captura automática de **screenshots** en fallos
 
 ## 🧪 Qué se está probando
 - Flujo de login con credenciales válidas
@@ -21,10 +21,10 @@ Se validan flujos críticos de una aplicación web aplicando buenas prácticas c
 - Validación de carga correcta del dashboard
 
 ## 🛠 Stack Tecnológico
-- Python
-- Pytest
-- Playwright
-- pytest-html
+- **Python**
+- **Pytest**
+- **Playwright**
+- **pytest-html**
 - Navegador Chromium
 
 ## 📂 Estructura del Proyecto
@@ -49,12 +49,12 @@ qa-web-framework-playwright/
 ├── .gitignore
 └── README.md
 ```
-- `pages/`: contiene los Page Objects siguiendo el patrón POM  
-- `tests/`: contiene los tests automatizados  
+- `pages/`: Page Objects siguiendo el patrón **POM**
+- `tests/`: tests automatizados del framework  
 - `utils/`: configuración centralizada del proyecto  
 - `reports/`: evidencia de ejecución (reporte visual y screenshots) 
-- `conftest.py`: fixtures y hooks globales de Pytest  
-- `pytest.ini`: configuración global de Pytest  
+- `conftest.py`: fixtures y hooks globales de **Pytest**
+- `pytest.ini`: configuración global de framework
 
 ## ▶️ Cómo ejecutar el proyecto
 ```powershell
@@ -88,8 +88,8 @@ $env:HEADLESS="false"; pytest
 - Se utiliza **Page Object Model** para mejorar mantenibilidad y escalabilidad
 - Las credenciales y URL base están centralizadas en un archivo de configuración
 - Se emplean **fixtures de Pytest** para el manejo del navegador y los contextos de ejecución.
-- Los tests se ejecutan en modo headless por defecto para facilitar su automatización.
-- Se generan reportes HTML y screenshots automáticos como evidencia ante fallos.
+- Los tests se ejecutan en modo **headless** por defecto para facilitar su automatización.
+- Se generan reportes **HTML** y **screenshots automáticos** como evidencia ante fallos.
 
 ## 📊 Reportes / Evidencia (cuando aplique)
 
@@ -100,8 +100,8 @@ $env:HEADLESS="false"; pytest
 ![Failure screenshot](reports/screenshots/example_failure.png)
 
 ## 📈 Mejoras futuras
-- Integración con CI/CD mediante GitHub Actions
-- Ejecución mediante Docker
+- Integración con **CI/CD** mediante GitHub Actions
+- Ejecución mediante **Docker**
 - Soporte para múltiples navegadores
-- Data-driven testing
-- Integración de pruebas de API dentro del mismo framework
+- **Data-driven testing**
+- Integración de pruebas de **API** dentro del mismo framework
